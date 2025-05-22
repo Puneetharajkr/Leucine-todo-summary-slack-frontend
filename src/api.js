@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'https://todos-summary-slack-backend.onrender.com';
 
 export const getTodos = () => axios.get(`${API_URL}/todos`);
 export const addTodo = (task) => axios.post(`${API_URL}/todos`, { task });
