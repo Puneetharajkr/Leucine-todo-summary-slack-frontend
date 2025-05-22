@@ -1,0 +1,68 @@
+.app {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+input {
+  padding: 0.5rem;
+  width: 70%;
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.summarize-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.empty {
+  font-style: italic;
+  color: #888;
+  margin-top: 1rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.delete-bg{
+  background-color:red;
+  color:white
+}
+
+.todos-list-bg{
+  background-color:aqua;
+  padding:5px 10px;
+  margin:15px 0px;
+  boder-radius:5px;
+  border-style: solid;
+  border-width:2px;
+  border-color:blue;
+  box-shadow: 5px 10px grey;
+}
