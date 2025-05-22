@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Todo Summary Assistant – Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the **React frontend** for the Full Stack Assignment by Leucine.
+It lets users manage todos and trigger a Slack summary via the backend API.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Live Links
 
-### `npm start`
+- Frontend (Vercel): https://todo-summary-slack-frontend.vercel.app
+- Backend (Render): https://todos-summary-slack-backend.onrender.com
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+- React 19
+- Axios
+- Custom CSS
+- RESTful API integration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Project Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+frontend/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+├── src/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+│   ├── components/
 
-### `npm run eject`
+│   │   ├── TodoForm.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+│   │   └── TodoList.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+│   ├── App.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+│   ├── api.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+│   ├── styles.css
 
-## Learn More
+│   └── index.js
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+├── .env
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+├── package.json
 
-### Code Splitting
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Getting Started Locally
 
-### Analyzing the Bundle Size
+### 1. Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+cd frontend
+npm install
 
-### Making a Progressive Web App
+### 2. Create `.env` file
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+REACT_APP_API_URL=https://todos-summary-slack-backend.onrender.com
 
-### Advanced Configuration
+### 3. Start development server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+npm start
 
-### Deployment
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Add Task
+* View Todo List
+* Delete Task
+* Generate Summary using backend
+* Send to Slack
+* Manual "Get Todos" button
+* Alerts when list is empty
